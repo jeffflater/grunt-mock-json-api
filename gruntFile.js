@@ -3,14 +3,17 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         mockjsonapi: {
-            options: {
-                jsonStore: 'test/data/data.json',
-                emptyJsonStore: true
+            clean: {
+                jsonStore: 'test/data/store.json'
             },
-            apimocks: [
-                'test/mocks/'
-            ],
-            apidocs: 'test/apidocs/'
+            test: {
+                mocks: [
+                    'test/mocks/'
+                ]
+            },
+            docs: {
+                publish: 'test/apidocs/'
+            }
         }
     });
 
@@ -20,6 +23,6 @@ module.exports = function(grunt) {
     // These plugins provide necessary tasks.
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['mockjsonapi']);
+    grunt.registerTask('default', ['mockjsonapi:clean', 'mockjsonapi:test', 'mockjsonapi:docs']);
 
 };
