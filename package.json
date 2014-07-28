@@ -1,0 +1,44 @@
+{
+  "name": "grunt-mock-json-api",
+  "version": "0.0.1",
+  "description": "grunt plugin for mock-json-api",
+  "main:": "tasks",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeffflater/grunt-mock-json-api-web.git"
+  },
+  "author": "Jeff Flater <jflater.email@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jeffflater/grunt-mock-json-api/issues"
+  },
+  "homepage": "http://mock-json-api.com",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-apidoc": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-run": "^0.2.2",
+    "jasmine-node-karma": "^1.6.1",
+    "jshint-stylish": "^0.4.0",
+    "rootpath": "^0.1.2"
+  },
+  "peerDependencies": {
+    "grunt": "^0.4.x"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "jasmine-node-karma": "^1.6.1",
+    "jshint-stylish": "^0.4.0",
+    "karma": "^0.12.19",
+    "karma-jasmine": "^0.1.5",
+    "load-grunt-tasks": "^0.6.0",
+    "mock-json-api": "0.0.6",
+    "rootpath": "^0.1.2"
+  }
+}
