@@ -40,26 +40,12 @@ module.exports = function(grunt) {
     });
 
     grunt.registerMultiTask('mockjsonapi', 'Cleans, test, and generates api documentation for mock-json-api.', function() {
+        var options = this.options({});
 
-        var options = this.options({
-            test: 'test'
-        });
-
-        cleanJsonStore(options.jsonStore, options.emptyJsonStore);
+        if (options.emptyJsonStore) {
+            fs.writeFileSync(options.jsonStore, '{}', 'utf8');
+        }
 
         grunt.task.run(['jshint', 'run:jasminenodekarma', 'apidoc']);
-
-        grunt.config('mockjsonapi.apimocks');
-
-        grunt.log.writeln("Successfully cleanded, tested and generated api documentation.");
-
     });
-
-
-    var cleanJsonStore = function(jsonStore, emptyJsonStore){
-        if (emptyJsonStore) {
-            fs.writeFileSync(jsonStore, '{}', 'utf8');
-        }
-    };
-
 };

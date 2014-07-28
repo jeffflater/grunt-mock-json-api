@@ -1,7 +1,7 @@
 {
   "name": "grunt-mock-json-api",
   "version": "0.0.1",
-  "description": "grunt plugin for mock-json-api",
+  "description": "Grunt plugin for mock-json-api",
   "main:": "tasks",
   "engines": {
     "node": "0.10.x",
@@ -13,7 +13,6 @@
   },
   "author": "Jeff Flater <jflater.email@gmail.com>",
   "license": "MIT",
-  "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/jeffflater/grunt-mock-json-api/issues"
   },
@@ -40,5 +39,12 @@
     "load-grunt-tasks": "^0.6.0",
     "mock-json-api": "0.0.6",
     "rootpath": "^0.1.2"
+  },
+  "main": "gruntFile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
