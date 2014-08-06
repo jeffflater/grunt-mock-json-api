@@ -1,6 +1,6 @@
 {
   "name": "grunt-mock-json-api",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Grunt plugin for mock-json-api",
   "main:": "tasks",
   "engines": {
@@ -27,7 +27,13 @@
     "rootpath": "^0.1.2"
   },
   "peerDependencies": {
-    "grunt": "^0.4.x"
+    "grunt": "^0.4.x",
+    "grunt-apidoc": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-run": "^0.2.2",
+    "jasmine-node-karma": "^1.6.1",
+    "jshint-stylish": "^0.4.0",
+    "rootpath": "^0.1.2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
